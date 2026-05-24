@@ -1,0 +1,101 @@
+/* ============================================================
+   RESPONSIVE.CSS — Jyoti Portfolio Website
+   ============================================================ */
+
+/* ── TABLET ─────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .about-grid,
+  .booking-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .about-image-wrap { aspect-ratio: 4/3; max-width: 500px; margin: 0 auto; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+
+  .model-card.featured { grid-column: span 1; }
+
+  .identity-cards { gap: 1.2rem; }
+
+  nav { padding: 1.2rem 2rem; }
+  nav.scrolled { padding: .8rem 2rem; }
+}
+
+/* ── LARGE MOBILE ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Nav */
+  nav { padding: 1rem 1.5rem; }
+  nav.scrolled { padding: .7rem 1.5rem; }
+  .nav-links,
+  .nav-cta { display: none; }
+  .hamburger { display: flex; }
+
+  /* Hero */
+  .hero-name { font-size: clamp(3.5rem, 18vw, 6rem); }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .hero-buttons .btn-gold,
+  .hero-buttons .btn-outline { width: 100%; max-width: 280px; justify-content: center; }
+
+  /* Sections */
+  section { padding: 4rem 0; }
+  .section-inner { padding: 0 1.2rem; }
+
+  /* Grids */
+  .about-grid { gap: 3rem; }
+  .about-stats { grid-template-columns: repeat(3,1fr); }
+
+  .booking-grid,
+  .contact-grid { gap: 3rem; }
+  .booking-form { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: 1; }
+  .form-buttons { flex-direction: column; }
+  .form-buttons .btn-gold,
+  .form-buttons .btn-outline { justify-content: center; }
+
+  .makeup-grid { grid-template-columns: repeat(2,1fr); }
+  .model-grid  { grid-template-columns: repeat(2,1fr); }
+  .services-grid   { grid-template-columns: 1fr; }
+  .specialties-grid { grid-template-columns: repeat(2,1fr); }
+  .identity-cards  { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  /* Page hero */
+  .page-hero { padding: 8rem 0 4rem; }
+
+  /* Testimonials */
+  .testimonial-card { width: 290px; }
+}
+
+/* ── SMALL MOBILE ───────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .hero-name { font-size: clamp(3rem, 20vw, 5rem); }
+
+  .about-stats { grid-template-columns: repeat(3,1fr); gap: .8rem; }
+  .stat-number { font-size: 1.8rem; }
+
+  .makeup-grid { grid-template-columns: repeat(2,1fr); gap: .7rem; }
+  .model-grid  { grid-template-columns: repeat(2,1fr); gap: .7rem; }
+  .specialties-grid { grid-template-columns: 1fr; }
+
+  .loader-name { font-size: 2.8rem; }
+
+  .section-title { font-size: 2rem; }
+
+  .identity-card { aspect-ratio: 3/4; padding: 2rem 1.5rem; }
+  .identity-card-title { font-size: 2rem; }
+
+  .booking-form { gap: .9rem; }
+
+  .btn-gold,
+  .btn-outline { padding: .8rem 1.6rem; font-size: .68rem; }
+}
+
+/* ── VERY SMALL ─────────────────────────────────────────────── */
+@media (max-width: 360px) {
+  .about-stats { grid-template-columns: 1fr 1fr; }
+  .stat-card:last-child { grid-column: 1/-1; }
+  .makeup-grid,
+  .model-grid { grid-template-columns: 1fr; }
+}
