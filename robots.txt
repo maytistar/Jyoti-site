@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jyoti-makeup.netlify.app/seo/sitemap.xml

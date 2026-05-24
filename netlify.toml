@@ -1,0 +1,60 @@
+# ============================================================
+# netlify.toml — Jyoti Portfolio Website
+# ============================================================
+
+[build]
+  publish = "."
+
+# ── REDIRECTS ────────────────────────────────────────────────
+[[redirects]]
+  from = "/makeup"
+  to   = "/bridal-makeup-artist-delhi.html"
+  status = 301
+
+[[redirects]]
+  from = "/makeup-artist"
+  to   = "/bridal-makeup-artist-delhi.html"
+  status = 301
+
+[[redirects]]
+  from = "/model"
+  to   = "/model-in-delhi.html"
+  status = 301
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to   = "/seo/sitemap.xml"
+  status = 200
+
+[[redirects]]
+
+# ── SECURITY & PERFORMANCE HEADERS ──────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "DENY"
+    X-XSS-Protection       = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+# ── CACHE STATIC ASSETS ──────────────────────────────────────
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
