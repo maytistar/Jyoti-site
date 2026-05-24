@@ -1,0 +1,132 @@
+/* ============================================================
+   ANIMATIONS.CSS — Jyoti Portfolio Website
+   ============================================================ */
+
+/* ── KEYFRAMES ──────────────────────────────────────────────── */
+@keyframes fadeUpIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes heroReveal {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fillBar {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+@keyframes pulse {
+  0%,100% { opacity: .3; transform: translate(-50%,-50%) scale(1); }
+  50%      { opacity: .7; transform: translate(-50%,-50%) scale(1.05); }
+}
+@keyframes bounce {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(8px); }
+}
+@keyframes scrollTrack {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── HERO CONTENT ───────────────────────────────────────────── */
+.hero-content {
+  animation: heroReveal 1.5s ease .3s both;
+}
+
+/* ── SCROLL REVEAL ──────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(.94);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── STAGGER DELAYS (applied by JS) ────────────────────────── */
+/* JS sets style.transitionDelay on children dynamically */
+
+/* ── GOLD SHIMMER TEXT ──────────────────────────────────────── */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--gold-dark) 0%,
+    var(--gold-light) 40%,
+    var(--gold) 60%,
+    var(--gold-dark) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ── PAGE TRANSITION ────────────────────────────────────────── */
+.page-transition-overlay {
+  position: fixed; inset: 0; background: var(--black);
+  z-index: 99998; pointer-events: none;
+  opacity: 0; transition: opacity .4s ease;
+}
+.page-transition-overlay.active { opacity: 1; pointer-events: all; }
+
+/* ── HOVER LIFT ─────────────────────────────────────────────── */
+.hover-lift { transition: transform .3s ease, box-shadow .3s ease; }
+.hover-lift:hover { transform: translateY(-5px); }
+
+/* ── FADE IN ON LOAD ────────────────────────────────────────── */
+.fade-on-load { animation: fadeIn .8s ease .5s both; }
+
+/* ── CARD ENTRANCE ──────────────────────────────────────────── */
+.card-entrance {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.card-entrance.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
