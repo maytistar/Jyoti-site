@@ -1,1 +1,13 @@
-
+{
+  "name": "Jyoti – Makeup Artist & Model Delhi",
+  "short_name": "Jyoti",
+  "description": "Professional Makeup Artist & Model in Delhi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#c9a96e",
+  "icons": [
+    { "src": "/favicon/favicon.ico", "sizes": "48x48", "type": "image/x-icon" },
+    { "src": "/favicon/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
