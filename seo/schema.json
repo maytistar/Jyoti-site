@@ -1,0 +1,42 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Jyoti – Makeup Artist & Model, Delhi",
+    "url": "https://jyoti-makeup.netlify.app/",
+    "description": "Official portfolio of Jyoti – professional makeup artist in Patel Nagar, Delhi and professional model in Delhi."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "BeautySalon"],
+    "name": "Jyoti – Professional Makeup Artist",
+    "description": "Best makeup artist in Patel Nagar, Delhi. Bridal, HD, party and engagement makeup.",
+    "url": "https://jyoti-makeup.netlify.app/bridal-makeup-artist-delhi.html",
+    "telephone": "+919999405631",
+    "email": "Jyotikush87@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Patel Nagar",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110008",
+      "addressCountry": "IN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 28.6428, "longitude": 77.1735 },
+    "openingHours": "Mo-Su 08:00-20:00",
+    "priceRange": "₹₹",
+    "sameAs": ["https://instagram.com/glossupgirl._"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jyoti",
+    "jobTitle": "Professional Model",
+    "description": "Professional fashion and lifestyle model based in Delhi.",
+    "url": "https://jyoti-makeup.netlify.app/model-in-delhi.html",
+    "telephone": "+919999405631",
+    "email": "Jyotikush87@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN" },
+    "sameAs": ["https://instagram.com/cielo_.lia97"]
+  }
+]
