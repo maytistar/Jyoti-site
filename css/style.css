@@ -67,7 +67,7 @@ a { text-decoration: none; color: inherit; }
   color: var(--text-muted); margin-top: .5rem; font-weight: 300;
 }
 .loader-bar { width: 200px; height: 1px; background: rgba(201,169,110,.2); margin-top: 2rem; overflow: hidden; }
-.loader-fill { height: 100%; background: var(--gold); animation: fillBar 2s ease forwards; }
+.loader-fill { height: 100%; background: var(--gold); animation: fillBar 0.7s ease forwards; transform-origin: left center; }
 
 /* ── NAVBAR ─────────────────────────────────────────────────── */
 nav {
