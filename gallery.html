@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Gallery | Jyoti – Delhi Portfolio</title>
 <meta name="description" content="Browse Jyoti's full portfolio gallery — bridal makeup, HD makeup, party looks, fashion model shoots, brand campaigns and more. Based in Delhi."/>
-<link rel="canonical" href="maytistar.github.io/Jyoti-site
-/gallery.html"/>
+<link rel="canonical" href="https://jyoti-makeup.netlify.app/gallery.html"/>
 <meta name="robots" content="index, follow"/>
 <link rel="icon" href="favicon/favicon.ico"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://res.cloudinary.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'"/>
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/></noscript>
 <link rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="css/animations.css"/>
 <link rel="stylesheet" href="css/responsive.css"/>
@@ -50,7 +51,7 @@
   "@type": "Person",
   "name": "Jyoti",
   "url": "https://jyoti-makeup.netlify.app/",
-  "image": "https://res.cloudinary.com/dsggh3fcj/image/upload/v1779276099/9c266efd-dcc7-4bb7-84f1-4f07ceda620e_diu8ai.jpg",
+  "image": "https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779276099/9c266efd-dcc7-4bb7-84f1-4f07ceda620e_diu8ai.jpg",
   "jobTitle": ["Professional Makeup Artist", "Professional Model"],
   "telephone": "+919999405631",
   "email": "Jyotikush87[at]gmail.com",
@@ -88,7 +89,7 @@
 <div class="lightbox" id="lightbox">
   <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
   <button onclick="lightboxPrev()" style="position:absolute;left:1.5rem;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid var(--gold);color:var(--gold);background:none;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;"><i class="fas fa-chevron-left"></i></button>
-  <img id="lightboxImg" src="" alt=""/>
+  <img fetchpriority="high" loading="eager" id="lightboxImg" src="" alt=""/>
   <button onclick="lightboxNext()" style="position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);width:44px;height:44px;border:1px solid var(--gold);color:var(--gold);background:none;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;"><i class="fas fa-chevron-right"></i></button>
   <div id="lightboxCounter" style="position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:.75rem;letter-spacing:.2em;color:var(--text-muted);"></div>
 </div>
@@ -143,88 +144,88 @@
     <div class="gallery-grid" id="galleryGrid">
       <!-- MAKEUP -->
       <div class="gallery-item tall" data-gcat="bridal" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093592/makeup1_osncqr.jpg" alt="Bridal Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093592/makeup1_osncqr.jpg" alt="Bridal Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Radiant Bride</div><div class="gallery-item-cat">Bridal Makeup</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="party" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093593/party1_rhh2fn.jpg" alt="Party Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093593/party1_rhh2fn.jpg" alt="Party Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Evening Glam</div><div class="gallery-item-cat">Party Makeup</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item tall" data-gcat="hd" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093590/hd_t60tpp.jpg" alt="HD Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093590/hd_t60tpp.jpg" alt="HD Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Flawless HD</div><div class="gallery-item-cat">HD Makeup</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="fashion-makeup" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093591/fash_r1ovtl.jpg" alt="Fashion Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093591/fash_r1ovtl.jpg" alt="Fashion Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Editorial Look</div><div class="gallery-item-cat">Fashion Makeup</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item tall" data-gcat="bridal" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779096330/trad_dq8zh0.jpg" alt="Traditional Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779096330/trad_dq8zh0.jpg" alt="Traditional Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Ethnic Elegance</div><div class="gallery-item-cat">Traditional Look</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="party" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093459/glam_szguej.jpg" alt="Glam Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093459/glam_szguej.jpg" alt="Glam Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Smokey Glam</div><div class="gallery-item-cat">Glam Look</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item tall" data-gcat="bridal" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093591/makeup2_m4ty1z.jpg" alt="Bridal Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093591/makeup2_m4ty1z.jpg" alt="Bridal Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Golden Bride</div><div class="gallery-item-cat">Bridal Makeup</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="party" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093591/party2_nfrpiu.jpg" alt="Party Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093591/party2_nfrpiu.jpg" alt="Party Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Night Out</div><div class="gallery-item-cat">Party Makeup</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="party" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093591/glam2_wju5cw.jpg" alt="Glam Makeup Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093591/glam2_wju5cw.jpg" alt="Glam Makeup Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Red Carpet</div><div class="gallery-item-cat">Glam Look</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <!-- MODEL -->
       <div class="gallery-item tall" data-gcat="model-fashion" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779096512/model2_hsahq3.jpg" alt="Fashion Model Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779096512/model2_hsahq3.jpg" alt="Fashion Model Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Runway Ready</div><div class="gallery-item-cat">Fashion Model</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="model-ethnic" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093591/suit2_o8hhes.jpg" alt="Ethnic Model Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093591/suit2_o8hhes.jpg" alt="Ethnic Model Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Heritage Grace</div><div class="gallery-item-cat">Ethnic Look</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item tall" data-gcat="model-fashion" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093590/western_umx2fv.jpg" alt="Western Model Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093590/western_umx2fv.jpg" alt="Western Model Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Contemporary</div><div class="gallery-item-cat">Western Look</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="lifestyle" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779096328/life_e9kra6.jpg" alt="Lifestyle Model Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779096328/life_e9kra6.jpg" alt="Lifestyle Model Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Natural Radiance</div><div class="gallery-item-cat">Lifestyle</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item tall" data-gcat="model-brand" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093321/beauty_j4i8f4.jpg" alt="Beauty Model Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093321/beauty_j4i8f4.jpg" alt="Beauty Model Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Close Up</div><div class="gallery-item-cat">Beauty Portrait</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="model-brand" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093590/brand_efm2ki.jpg" alt="Brand Shoot Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093590/brand_efm2ki.jpg" alt="Brand Shoot Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Brand Ambassador</div><div class="gallery-item-cat">Brand Shoot</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item tall" data-gcat="model-ethnic" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093592/suit_bievv9.jpg" alt="Ethnic Shoot Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093592/suit_bievv9.jpg" alt="Ethnic Shoot Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Traditional Opulence</div><div class="gallery-item-cat">Ethnic Look</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
       <div class="gallery-item sq" data-gcat="model-fashion" onclick="openLightboxWithNav(this)">
-        <img src="https://res.cloudinary.com/dsggh3fcj/image/upload/v1779093592/model_d4fowj.jpg" alt="Fashion Shoot Delhi"/>
+        <img loading="lazy" src="https://res.cloudinary.com/dsggh3fcj/image/upload/f_auto,q_auto,w_900/v1779093592/model_d4fowj.jpg" alt="Fashion Shoot Delhi"/>
         <div class="gallery-item-overlay"><div class="gallery-item-title">Vogue Edit</div><div class="gallery-item-cat">Fashion Shoot</div></div>
         <div class="gallery-item-zoom"><i class="fas fa-expand"></i></div>
       </div>
